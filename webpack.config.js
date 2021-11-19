@@ -42,7 +42,7 @@ module.exports = {
       name: "house",
       filename: 'remoteEntry.js',
       exposes: {
-        './Button': './src/Button',
+        './App': './src/App',
       },
       shared: ["react", "react-dom"],
     }),
