@@ -1,0 +1,46 @@
+{
+  "name": "haunted-house",
+  "version": "1.0.0",
+  "description": "study projects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmirnovDmitrii/haunted-house.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmirnovDmitrii/haunted-house/issues"
+  },
+  "homepage": "https://github.com/SmirnovDmitrii/haunted-house#readme",
+  "scripts": {
+    "start": "webpack-cli serve",
+    "build": "webpack --mode production",
+    "serve": "serve dist -p 3001",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^7.0.19",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "three": "^0.134.0",
+    "three-stdlib": "^2.5.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/react": "^17.0.35",
+    "@types/react-dom": "^17.0.11",
+    "babel-loader": "^8.2.3",
+    "bundle-loader": "^0.5.6",
+    "copy-webpack-plugin": "^10.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.4.1",
+    "serve": "^13.0.2",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  }
+}
