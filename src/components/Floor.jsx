@@ -4,7 +4,7 @@ const Floor = (props) => {
   return (
     <mesh {...props}>
       <planeBufferGeometry args={[30, 30]} />
-      <meshStandardMaterial />
+      <meshStandardMaterial color={"#a9c388"} />
     </mesh>
   );
 };

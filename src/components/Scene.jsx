@@ -2,14 +2,17 @@ import React from "react";
 import Floor from "./Floor";
 import House from "./house/House";
 import Graves from "./graves/Graves";
+import Fog from "./Fog";
+import Lights from "./Lights";
 
 const Scene = () => {
   return (
     <>
-      <ambientLight color={"#ffffff"} intensity={0.5} />
       <Floor rotation={[-Math.PI / 2, 0, 0]} />
       <House />
       <Graves />
+      <Fog />
+      <Lights />
     </>
   );
 };

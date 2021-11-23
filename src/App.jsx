@@ -6,7 +6,11 @@ import Scene from "./components/Scene";
 
 const App = () => {
   return (
-    <Canvas camera={{ position: [10, 5, 20] }} gl>
+    <Canvas
+      camera={{ position: [4, 3, 6] }}
+      gl
+      style={{ backgroundColor: "#262837" }}
+    >
       <CameraControls />
       <Scene />
     </Canvas>
