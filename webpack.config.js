@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ModuleFederationPlugin =
   require("webpack").container.ModuleFederationPlugin;
 const path = require("path");
@@ -40,11 +41,14 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       name: "house",
-      filename: 'remoteEntry.js',
+      filename: "remoteEntry.js",
       exposes: {
-        './App': './src/App',
+        "./App": "./src/App",
       },
       shared: ["react", "react-dom"],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: path.resolve(__dirname, "./static") }],
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
