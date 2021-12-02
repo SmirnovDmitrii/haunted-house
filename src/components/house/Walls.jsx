@@ -25,6 +25,7 @@ const Walls = (props) => {
       );
     }
   }, []);
+
   return (
     <mesh {...props}>
       <boxBufferGeometry args={[4, 2.5, 4]} ref={ref} />
